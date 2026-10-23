@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+
+    <style>
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="balloon"
+         onclick="aumentar()"
+         onmouseleave="diminuir()">
+    </div>
+
+    <script>
+        let tamanho = 200;
+        let cores = ["red", "green", "blue"];
+        let indiceCor = 0;
+
+        let balao = document.getElementById("balloon");
+
+        function atualizar() {
+            balao.style.width = tamanho + "px";
+            balao.style.height = tamanho + "px";
+            balao.style.backgroundColor = cores[indiceCor];
+        }
+
+        function aumentar() {
+            tamanho = tamanho + 10;
+            indiceCor = (indiceCor + 1) % 3;
+
+            if (tamanho > 420) {
+                alert("O balão explodiu!");
+            tamanho = 200;
+        }
+                
+            atualizar();
+        }
+
+        function diminuir() {
+            tamanho = tamanho - 5;
+
+            if (tamanho < 200) {
+                tamanho = 200;
+            }
+
+            indiceCor = (indiceCor + 2) % 3;
+
+            atualizar();
+        }
+
+        
+    </script>
+</body>
+</html>
