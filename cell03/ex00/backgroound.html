@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+
+<body>
+    <button type="button" onclick="mudarCor()">Mudar de cor</button>
+
+    <script>
+    let tamanho = 16;
+
+    function mudarCor() {
+        let cor = Math.floor(Math.random() * 16777216);
+        document.body.style.backgroundColor = "#" + cor.toString(16).padStart(6, "0");
+
+        tamanho = tamanho + 4;
+        document.querySelector("button").style.fontSize = tamanho + "px";
+    }
+</script>
+
+
+</body>
+
+
+
+</html>
