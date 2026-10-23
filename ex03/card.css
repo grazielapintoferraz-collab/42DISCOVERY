@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.graziela {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.graziela td {
+    padding: 10px;
+}
+
+.graziela h1 {
+    font-size: 26px;
+}
+
+.graziela h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.foto {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.rede-social {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.graziela a {
+    text-decoration: none;
+}
+
+.graziela button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.graziela button:hover {
+    background-color: #444;
+}
