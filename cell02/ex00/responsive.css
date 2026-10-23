@@ -1,0 +1,23 @@
+table {
+     
+border:1px; width: 100%;
+    
+}
+
+.amarelo { 
+
+    background-color: yellow; 
+    text-align: center; 
+    width: 50%; 
+    height: 100px;
+   
+}
+
+.verde {
+
+    background-color: green; 
+    text-align: center; 
+    width: 50%; 
+    height: 100px;
+
+}
